@@ -28,3 +28,26 @@ for (int i = 0; i <n; i++){                         // Membaca input dari penggu
 }
 
 }
+
+void bubbleSortArray(){
+    int pass = 1;                                   // Step 1 Memasukkan pass = 1
+
+    do 
+    {
+        for (int j = 0; j <= n -1-pass;j++){        // Step 2 
+
+            if (arr[j] > arr[j + 1] )               // Step 3
+            {
+                int temp;
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] + temp;
+            }  
+
+        }
+
+        pass = pass + 1;                            // Step 4
+
+    }while (pass <= n - 1);                         // Step 5
+}
+
